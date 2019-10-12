@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">ReachGoal</string>
+
+    <!-- About -->
+    <string name="developer">Developer</string>
+    <string name="developerName">Eduardo Matoso de Lima</string>
+    <string name="appVersion">App Version 1.0</string>
+    <string name="ivLogoDescription">target with an arrow</string>
+    <string name="label_email">e-mail</string>
+    <string name="label_password">password</string>
+    <string name="button_login">login</string>
+    <string name="label_new_account">Do not have an account yet? Click here.</string>
+    <string name="header_new_user">New User</string>
+    <string name="label_name">Name</string>
+    <string name="button_new_account">New account</string>
+    <string name="menu_about">About</string>
+    <string name="menu_logout">Exit</string>
+    <string name="stay_connected">Stay connected?</string>
+
+</resources>
