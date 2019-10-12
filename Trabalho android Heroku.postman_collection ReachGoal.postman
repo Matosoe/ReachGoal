@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "24353d55-c993-4e19-b0df-d79c35d987ef",
+		"name": "Trabalho android Heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lista Metas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apirest-atingemeta.herokuapp.com/api/metas",
+					"protocol": "https",
+					"host": [
+						"apirest-atingemeta",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"metas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cria Meta",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n    \t\n    \t\"nomeMeta\": \"Meta Teste 4 usuario 1\",\n    \t\"quantidadeMeta\": 4,\n    \t\"quantidadeRealizada\": 40,\n    \t\"idUsuario\": 1\n\t}\n"
+				},
+				"url": {
+					"raw": "https://apirest-atingemeta.herokuapp.com/api/meta",
+					"protocol": "https",
+					"host": [
+						"apirest-atingemeta",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"meta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Meta por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apirest-atingemeta.herokuapp.com/api/meta/4",
+					"protocol": "https",
+					"host": [
+						"apirest-atingemeta",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"meta",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta Meta",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idMeta\": 7\n}"
+				},
+				"url": {
+					"raw": "https://apirest-atingemeta.herokuapp.com/api/meta",
+					"protocol": "https",
+					"host": [
+						"apirest-atingemeta",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"meta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza Meta",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idMeta\": 4,\n    \"idUsuario\": 1,\n    \"nomeMeta\": \"Meta Teste 2 atualizado\",\n    \"quantidadeMeta\": 22,\n    \"quantidadeRealizada\": 202\n}"
+				},
+				"url": {
+					"raw": "https://apirest-atingemeta.herokuapp.com/api/meta",
+					"protocol": "https",
+					"host": [
+						"apirest-atingemeta",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"meta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Usuários",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apirest-atingemeta.herokuapp.com/apiUsuario/usuarios",
+					"protocol": "https",
+					"host": [
+						"apirest-atingemeta",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"apiUsuario",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cria Usuário",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n    \t\"emailUsuario\": \"usuario teste PROD 3\",\n    \t\"senhaUsuario\": \"345\"\n\t}\n"
+				},
+				"url": {
+					"raw": "https://apirest-atingemeta.herokuapp.com/apiUsuario/usuario",
+					"protocol": "https",
+					"host": [
+						"apirest-atingemeta",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"apiUsuario",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Usuário por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apirest-atingemeta.herokuapp.com/apiUsuario/usuario/1",
+					"protocol": "https",
+					"host": [
+						"apirest-atingemeta",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"apiUsuario",
+						"usuario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta Usuário",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idUsuario\": 2\n}"
+				},
+				"url": {
+					"raw": "https://apirest-atingemeta.herokuapp.com/apiUsuario/usuario",
+					"protocol": "https",
+					"host": [
+						"apirest-atingemeta",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"apiUsuario",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza Usuário",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idUsuario\": 3,\n    \"emailUsuario\": \"teste 3  atualizado\",\n    \"senhaUsuario\": \"678\"\n}"
+				},
+				"url": {
+					"raw": "https://apirest-atingemeta.herokuapp.com/apiUsuario/usuario",
+					"protocol": "https",
+					"host": [
+						"apirest-atingemeta",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"apiUsuario",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
